@@ -44,11 +44,15 @@ function playHadouken() {
 }
 
 function gameIntro() {
-	$('.logo').fadeIn(2500, function() {
+	$('.logo').fadeIn(3500, function() {
 		$(this).fadeOut(1000, function() {
-			$('.instructions').fadeIn(1500, function() {
-				$(this).fadeOut(4500);
-			});
-		});
-	})
+			$('.delivered-by').fadeIn(3500, function (){
+				$(this).fadeOut(1500, function() {
+					$('.instructions').fadeIn(1500, function() {
+						$(this).fadeOut(5500);
+					})
+				})	
+			})
+		})
+	});
 }
